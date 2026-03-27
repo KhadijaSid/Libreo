@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Books</title>
+</head>
+
+<body>
+    <div class="start" id="load">
+        <h1>Read</h1>
+        <h1>Imagine</h1>
+        <h1>Enjoy</h1>
+    </div>
+    <main>
+        <!-- <img src="imgs/castle.png" alt=""> -->
+        <div id="homepage">
+            <header>
+                <h1>Libreo</h1>
+                <div class="headings">
+                    <h3>Books</h3>
+                    <h3>Bookmarks</h3>
+                    <h3>Journals</h3>
+                    <h3>Pens</h3>
+                </div>
+                <div class="shop">
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                    <i class="fa-solid fa-bag-shopping" id="bag"></i>
+                    <i class="fa-solid fa-book" id="book"></i>
+                </div>
+            </header>
+            <div class="homeBG">
+                <div class="homeEle1">
+                    <H2>Libreo</H2>
+                    <p>Cities you'll never see on screen</p>
+                </div>
+                <img src="imgs/Books.png" alt="">
+            </div>
+        </div>
+        <div class="page2">
+            <div class="corner">
+                <img src="imgs/pearls.png" alt="">
+            </div>
+            <h1>Best Selling</h1>
+            <div class="image-slider">
+                <div class="images-stack">
+                    <img src="imgs/ONCE UPON.jpg" class="slider-img" id="img1" alt="">
+                    <img src="imgs/CAR.jpg" class="slider-img" id="img2" alt="">
+                    <img src="imgs/CK.jpg" class="slider-img" id="img3" alt="">
+                    <img src="imgs/TG.jpg" class="slider-img" id="img4" alt="">
+                    <img src="imgs/TCP.jpg" class="slider-img" id="img5" alt="">
+                </div>
+                  <div class="images-stack">
+                    <img src="imgs/powerless.jpg" class="slider-img" id="img1" alt="">
+                    <img src="imgs/Twisted Lies.jpg" class="slider-img" id="img2" alt="">
+                    <img src="imgs/Best Murder Mystery.jpg" class="slider-img" id="img3" alt="">
+                    <img src="imgs/It Ends With Us.jpg" class="slider-img" id="img4" alt="">
+                    <img src="imgs/Six of Crows.jpg" class="slider-img" id="img5" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="page3">
+            <h2>Shop by Trope</h2>
+            <div class="slider-wrapper">
+                <button class="nav-btn prev" onclick="moveSlider(-1)">&#10094;</button>
+                <div class="image-slider-2" id="slider">
+                    <div class="image-card">
+                        <img src="imgs/enemies.jpg" alt="">
+                        <h3 class="bookName">Enemies to Lovers</h3>
+                        <p class="bookDet"></p>
+                    </div>
+                    <div class="image-card">
+                        <img src="imgs/ice.jpg" alt="">
+                        <h3 class="bookName">Ice Hockey</h3>
+                    </div>
+                    <div class="image-card">
+                        <img src="imgs/grumpy.jpg" alt="">
+                        <h3 class="bookName">Grumpy X Sunshine</h3>
+                    </div>
+                    <div class="image-card">
+                        <img src="imgs/fake.jpg" alt="">
+                        <h3 class="bookName">Fake Relationship</h3>
+                    </div>
+                    <div class="image-card">
+                        <img src="imgs/chosen.jpg" alt="">
+                        <h3 class="bookName">The Chosen one </h3>
+                    </div>
+                    <div class="image-card">
+                        <img src="imgs/friends.jpg" alt="">
+                        <h3 class="bookName">Friends to Lovers</h3>
+                    </div>
+                    <div class="image-card">
+                        <img src="imgs/royal.jpg" alt="">
+                        <h3 class="bookName">The Secret Royal</h3>
+                    </div>
+                </div>
+                <button class="nav-btn next" onclick="moveSlider(1)">&#10095;</button>
+            </div>
+
+        </div>
+        <div class="page4">
+            <div class="pageBG">
+                      <p>More Bang for Your Books</p>
+                <h1>"20% off on Bookish Bundles"</h1>
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <footer>©All rights reserved by Libreao</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
