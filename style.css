@@ -1,0 +1,324 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Reborn;
+}
+@font-face {
+    font-family: Reborn;
+    src: url(./Reborn.otf);
+}
+.start{
+    height: 100%;
+    width: 100%;
+    background-color: #382801;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition:  all ease 0.5s;
+}
+.start h1{
+    font-size: 4vw;
+    color: #F1E9D4;
+    position: absolute;
+    opacity: 0;
+    animation: load;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.start h1:nth-child(2){
+   animation-delay: 2s;
+}
+.start h1:nth-child(3){
+    animation-delay: 3s;
+ }
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+#main{
+    /* background-color: black; */
+    
+    position: relative;
+    z-index: 10;
+}
+/* ################################### Header */
+header{
+    position: relative;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #382801;
+}
+header h1{
+    font-family: Reborn;
+    padding-right: 250px;
+    padding-left: 100px;
+    cursor: pointer;
+
+}
+header .headings{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .shop{
+    width: 30%;
+    word-spacing: 100%;
+    padding-left: 200px;
+    cursor: pointer;
+}
+
+#homepage{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: #F1E9D4;
+}
+.homeBG{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+}
+.homeEle1 h2{
+    font-size: 7rem;
+    color: #382801;
+}
+.homeEle1 p{
+    font-size: 1.8rem;
+    color: #58420a;
+}
+.homeBG img{
+    height: 600px;
+    width: 600px;
+}
+header .headings:hover{
+    cursor: pointer;
+}
+/* ########################################### page 2 */
+.page2{
+    /* padding: 10px; */
+    height: 100vh;
+    width: 100%;
+}
+.corner{
+    margin-left: 850px;
+    margin-top: -33px;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+.page2 h1{
+    margin: 30px 50px 50px 50px;
+    text-align: center;
+    color: #382801;
+    font-size: 3rem;
+}
+.image-slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.images-stack{
+    margin-right: 560px;
+    margin-left: 150px;
+}
+.Image-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.slider-img{
+    height: 490px;
+    width: 350px;
+    position: absolute;
+    transform: rotate(23deg);
+    margin-left: 50px;
+    transition: all 2s ease;
+    filter: blur(3px);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#img1{
+    margin-left: 50px;
+}
+#img2{
+    margin-left: 10px;
+}
+#img3{
+    margin-left: -30px;
+}
+#img4{
+    margin-left: -70px;
+}
+#img5{
+    margin-left: -110px;
+    filter: blur(0px);
+}
+
+#img1:hover{
+    /* transform: translateX(500px); */
+    filter: blur(0px);
+    scale: calc(115%);
+     z-index: 99;
+}
+#img2:hover{
+    /* transform: translateX(500px); */
+    filter: blur(0px);
+        scale: calc(115%);
+         z-index: 99;
+
+}
+#img3:hover{
+    /* transform: translateX(550px); */
+    filter: blur(0px);
+        scale: calc(115%);
+        z-index: 99;
+
+}
+#img4:hover{
+    /* transform: translateX(650px); */
+        filter: blur(0px);
+            scale: calc(115%);
+             z-index: 99;
+
+}
+#img5:hover{
+    /* transform: translateX(650px); */
+        filter: blur(0px);
+            scale: calc(115%);
+             z-index: 99;
+
+}
+
+/* ################################# page 3 */
+.page3{
+    height: 80vh;
+    background-color: #F1E9D4;
+    width: 100%;
+    color: #382801;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.page3 h2{
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+.image-slider-2{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+}
+.slider-wrapper{
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+.image-card{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #F1E9D4;
+    color: #382801;
+    padding-top: 15px;
+    font-size: 1.2rem;
+    
+}
+.image-card img{
+    height: 300px;
+    width: 270px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.nav-btn {
+    position: absolute;
+    z-index: 10;
+    background: rgba(90, 80, 45, 0);
+    color: #382801;
+    border: none;
+    padding: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+/* ########################################### page 4 */
+.page4{
+    width: 100%;
+}
+.pageBG{
+    background-image: url("imgs/page4.png");
+    height: 58vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color:#382801;
+    justify-content: center;
+}
+.pageBG p{
+    font-size: 1.4rem;
+}
+.pageBG h1{
+    font-size: 3rem;
+}
+.pageBG button{
+    height: 60px;
+    width: 140px;
+    background-color: #382801;
+    border: none;
+    border-radius: 15px;
+    color: #F1E9D4;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+
+}
+.pageBG button:hover{
+    background-color: antiquewhite;
+    color: #382801;
+    cursor: pointer;
+}
+
+/* ####################################### footer */
+footer{
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+}
+
